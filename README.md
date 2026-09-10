@@ -93,35 +93,37 @@ The **hardware, backend, and database are handled by other team members.** This 
 
 ## 📁 Project Structure
 
+```text
 Rfid Attendance system/
 │
-├── frontend/ # 👉 The React frontend (this repo's main work)
-│ ├── public/
-│ ├── src/
-│ │ ├── assets/ # images (background, hero, etc.)
-│ │ ├── components/ # reusable UI (Card, Table, StatusBadge, Loader...)
-│ │ │ └── react-bits/ # LineSidebar, PillNav, Counter, ProfileCard
-│ │ ├── context/ # AuthContext (who is logged in + role)
-│ │ ├── data/ # dummy data (students, teachers, attendance, users)
-│ │ ├── hooks/ # useAuth
-│ │ ├── layouts/ # StudentLayout, TeacherLayout, AdminLayout
-│ │ ├── pages/
-│ │ │ ├── auth/ # RoleSelect, logins, registers
-│ │ │ ├── student/ # dashboard, attendance, profile
-│ │ │ ├── teacher/ # dashboard, class attendance, student list
-│ │ │ ├── admin/ # dashboard, manage students/teachers/cards, all attendance
-│ │ │ ├── common/ # NotFound, Unauthorized
-│ │ │ └── LiveDashboard.jsx # public live feed
-│ │ ├── routes/ # AppRoutes, ProtectedRoute
-│ │ ├── services/ # ⭐ all data access lives here (swap point for backend)
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ ├── .env.example
-│ └── package.json
+├── frontend/                     # The React frontend (this repo's main work)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/               # images (background, hero, etc.)
+│   │   ├── components/           # reusable UI (Card, Table, StatusBadge, Loader...)
+│   │   │   └── react-bits/       # LineSidebar, PillNav, Counter, ProfileCard
+│   │   ├── context/              # AuthContext (who is logged in + role)
+│   │   ├── data/                 # dummy data (students, teachers, attendance, users)
+│   │   ├── hooks/                # useAuth
+│   │   ├── layouts/              # StudentLayout, TeacherLayout, AdminLayout
+│   │   ├── pages/
+│   │   │   ├── auth/             # RoleSelect, logins, registers
+│   │   │   ├── student/          # dashboard, attendance, profile
+│   │   │   ├── teacher/          # dashboard, class attendance, student list
+│   │   │   ├── admin/            # dashboard, manage students/teachers/cards
+│   │   │   ├── common/           # NotFound, Unauthorized
+│   │   │   └── LiveDashboard.jsx # public live feed
+│   │   ├── routes/               # AppRoutes, ProtectedRoute
+│   │   ├── services/             # all data access lives here (backend swap point)
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env.example
+│   └── package.json
 │
-├── backend/ # (handled by the backend team — Node.js + Express)
+├── backend/                      # (handled by the backend team - Node.js + Express)
 │
 └── README.md
+```
 
 
 ---
