@@ -1,0 +1,69 @@
+.profile-card-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 440px;
+}
+
+.profile-card-inner {
+  position: relative;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, rgba(56, 73, 89, 0.95) 0%, rgba(39, 52, 64, 0.98) 100%);
+  border: 1px solid rgba(136, 189, 242, 0.35);
+  box-shadow: 0 20px 40px -12px rgba(39, 52, 64, 0.3), 0 0 25px rgba(136, 189, 242, 0.15);
+  padding: 2rem;
+  color: #ffffff;
+  overflow: hidden;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1), box-shadow 0.2s ease;
+  transform-style: preserve-3d;
+}
+
+.profile-card-inner:hover {
+  box-shadow: 0 25px 50px -12px rgba(39, 52, 64, 0.4), 0 0 35px rgba(136, 189, 242, 0.25);
+}
+
+.profile-card-shine {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(189, 221, 252, 0.18) 0%, transparent 60%);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  transition: opacity 0.3s ease;
+}
+
+.profile-card-chip {
+  width: 44px;
+  height: 32px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa7c11 100%);
+  position: relative;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(170, 124, 17, 0.6);
+}
+
+.profile-card-chip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.profile-card-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #88BDF2 0%, #BDDDFC 100%);
+  color: #384959;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(136, 189, 242, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}

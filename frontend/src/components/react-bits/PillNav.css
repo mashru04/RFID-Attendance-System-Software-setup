@@ -1,0 +1,45 @@
+.pill-nav-wrapper {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.35rem 0.4rem;
+  position: relative;
+}
+
+.pill-nav-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pill-nav-item {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.pill-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.pill-nav-glider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 9999px;
+  z-index: 1;
+  pointer-events: none;
+}
