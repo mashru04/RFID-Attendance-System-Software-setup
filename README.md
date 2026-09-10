@@ -241,7 +241,7 @@ Teacher { id, name, department, email, assignedCourses[] }
 
 ## 👥 Team
 
-- **Frontend:** [your name here]
+- **Frontend:** [Mashruba Islam]
 - **Backend & Database:** [teammate names]
 - **Hardware:** [teammate names]
 
